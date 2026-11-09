@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Operaciones</title>
+</head>
+<body>
+    <script>
+    let elegir = parseInt(prompt("Elige una operación:\n 1) Suma\n 2) Resta\n 3) Multiplicación\n 4) División"));
+    let num1 = parseFloat(prompt("Digite un número"));
+    let num2 = parseFloat(prompt("Digite otro número"));
+    let resul;
+
+    switch (elegir) {
+        case 1:
+            resul = num1 + num2;
+            document.write("La Suma de " + num1 + " + " + num2 + " = " + resul);
+            break;
+        case 2:
+            resul = num1 - num2;
+            document.write("La Resta de " + num1 + " - " + num2 + " = " + resul);
+            break;
+        case 3:
+            resul = num1 * num2;
+            document.write("La Multiplicacion de " + num1 + " x " + num2 + " = " + resul);
+            break;
+        case 4:
+            if (num2 != 0) {
+                resul = num1 / num2;
+                document.write("La División de " + num1 + " / " + num2 + " = " + resul);
+            } else {
+                document.write("Error Math");
+            }
+            break;
+        default:
+            document.write("Opcion Invalida");
+            break;
+    }
+</script>
+</body>
+</html>
